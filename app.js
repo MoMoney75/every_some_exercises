@@ -7,10 +7,12 @@ function hasOddNumber(arr) {
 
 //2 NOT SOLVED?
 function hasAZero(num) {
-  let arr = Array.from(num);
-  return arr.some(function (val) {
-    return arr.parseInt().includes(0);
-  });
+  num
+    .toString()
+    .split("")
+    .some((val) => {
+      return val === "0";
+    });
 }
 
 //3
